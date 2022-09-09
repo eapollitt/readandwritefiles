@@ -2,7 +2,7 @@ import csv
 
 infile = open('customers.csv','r')
 
-csvfile = csv.reader(infile,delimiter = ',')
+csvfile = csv.reader(infile, delimiter = ',')
 
 next(csvfile) #this will skip the first row
 
@@ -16,4 +16,3 @@ for record in csvfile:
     print('Phone:',record[5])
     
     input()
-    
